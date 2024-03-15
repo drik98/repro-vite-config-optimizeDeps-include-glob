@@ -51,4 +51,24 @@ export default defineConfig({
   server: {
     port: 3000,
   },
-})
+
+  // Using a glob: Does not work
+  // optimizeDeps: {
+  //   include: [
+  //     "vuetify/**/*.mjs",
+  //   ],
+  // },
+
+  // Listing each dependency separately: works 
+
+  // optimizeDeps: {
+  //   include: [
+  //     "vuetify/lib/components/VCard/index.mjs",
+  //     "vuetify/lib/components/VGrid/index.mjs",
+  //     "vuetify/lib/components/VImg/index.mjs",
+  //     "vuetify/lib/components/VKbd/index.mjs",
+  //     "vuetify/lib/components/VOverlay/index.mjs",
+  //     "vuetify/lib/components/VResponsive/index.mjs",
+  //   ],
+  // },
+});
